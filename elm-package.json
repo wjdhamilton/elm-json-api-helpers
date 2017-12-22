@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "2.0.0",
     "summary": "Set of encode and decode helper functions for working with json api",
     "repository": "https://github.com/wjdhamilton/elm-json-api-helpers.git",
     "license": "BSD3",

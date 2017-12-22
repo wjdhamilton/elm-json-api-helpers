@@ -74,7 +74,7 @@ encodePost objType atts rels =
 -}
 encodePatch :
     String
-    -> Int
+    -> String
     -> List ( String, Encode.Value )
     -> List ( String, Encode.Value )
     -> Encode.Value
@@ -114,9 +114,9 @@ relationships rels =
 
 {-| Encodes the "id" attribute of a JSON API conformant payload
 -}
-encodeId : Int -> ( String, Encode.Value )
-encodeId i =
-    ( "id", Encode.int i )
+encodeId : String -> ( String, Encode.Value )
+encodeId id =
+    ( "id", Encode.string id )
 
 
 {-| Adds the correct headers for JSON API conformant request to a RequestBuilder object
